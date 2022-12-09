@@ -39,7 +39,7 @@ jobs:
       - run: npm ci
       - name: Validate code format
         run: npm run prettier:check
-      - name: Check code syntax
+      - name: Validate code syntax
         run: npm run lint
       - name: Validate all commits
         run: npx commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
