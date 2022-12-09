@@ -38,7 +38,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: npm ci
+      - name: Install packages
+        run: npm ci
       - name: Validate code format
         run: npm run prettier:check
       - name: Validate code syntax
