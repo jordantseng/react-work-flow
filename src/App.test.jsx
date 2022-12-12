@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { describe, expect, it } from 'vitest';
 import { render, screen } from '../test-utils';
 import App from './App';
